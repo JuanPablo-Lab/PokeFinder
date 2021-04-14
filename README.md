@@ -1,5 +1,4 @@
 # PokeFinder
-# Enciclopedia Web de Pokemones
 
 * Este proyecto utiliza la data directamente del Api 'PokéApi' para fines educativos.
 
