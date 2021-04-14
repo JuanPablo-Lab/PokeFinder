@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagenes/FavIco.ico" />
+    <title>PokéFinder</title>
+    <link rel="stylesheet" type="text/css" href="css/battle.css" />
+  </head>
+  <body>
+    <header>
+      <br />
+      <div class="Tittle">
+        <img src="imagenes/01_TituloPokeFinder.png" class="imgTittle" />
+      </div>
+    </header>
+
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <div class="card-container" id="pokemonBattle">
+      <div class="card" id="pokemon-1">
+        <div class="card-body">
+          <img
+            src=""
+            alt=""
+            class="card-body-img"
+          />
+          <h1 class="card-body-title"></h1>
+          <p class="card-body-text"></p>
+          <p class="card-body-text"></p>
+        </div>
+
+        <div class="card-footer card-1" id="cardFooter">
+          <div class="card-footer-stat">
+            <h3></h3>
+            <p>Ataque</p>
+          </div>
+
+          <div class="card-footer-stat">
+            <h3></h3>
+            <p>Especial</p>
+          </div>
+
+          <div class="card-footer-stat">
+            <h3></h3>
+            <p>Defensa</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vs">
+        <img
+          src="imagenes/03_Vs.png"
+          alt="imgVs"
+          class="vsImg"
+          style="height: 200px"
+        />
+      </div>
+
+      <div class="card" id="pokemon-2">
+        <div class="card-header"></div>
+        <div class="card-body-2">
+          <img
+            src=""
+            alt=""
+            class="card-body-img"
+          />
+          <h1 class="card-body-title"></h1>
+          <p class="card-body-text"></p>
+          <p class="card-body-text"></p>
+        </div>
+
+        <div class="card-footer card-2" id="cardFooter">
+          <div class="card-footer-stat">
+            <h3></h3>
+            <p>Ataque</p>
+          </div>
+
+          <div class="card-footer-stat">
+            <h3></h3>
+            <p>Especial</p>
+          </div>
+
+          <div class="card-footer-stat">
+            <h3></h3>
+            <p>Defensa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+
+    <div class="botonesBlock">
+      <div>
+        <img src="imagenes/04_IcocnoPokemonRandom.png" class="imgBuscarNombre" />
+      </div>
+
+      <div>
+        <button type="submit" onclick="pokemonesRandom(2)" class="btnBattle">¡¡Nueva Batalla!!</button>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <img
+          src="imagenes/05_IconoHome.png"
+          class="imgHome"
+          id="imgBatalla"
+          onclick="openHomeForm()"
+          data-toggle="tooltip"
+          title="Volver al Inicio"
+        />
+      </div>
+    </footer>
+
+    <script src="JS/battle.js"></script>
+  </body>
+</html>

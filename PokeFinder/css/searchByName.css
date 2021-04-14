@@ -1,0 +1,51 @@
+/* ---------- ESTILOS GENERALES ---------- */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #212121;
+}
+
+.Tittle {
+  text-align: center;
+  margin: 2em;
+}
+
+.imgTittle {
+  width: 400px;
+  height: 100px;
+}
+
+/* ---------- ESTILOS FORM SEARCH BY NAME ---------- */
+/* ESTILOS CSS AQUÍ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- BOTÓN HOME ---------- */
+.imgHome {
+  background-color: #ff6600;
+  border-radius: 50px;
+  margin-left: 25px;
+}
+.imgHome:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 30px #fd7a20;
+}
