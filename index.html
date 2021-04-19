@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagenes/FavIco.ico" />
+    <title>PokéFinder</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <br />
+      <div class="Tittle">
+        <img src="imagenes/01_TituloPokeFinder.png" class="imgTittle" />
+      </div>
+    </header>
+
+    <br /><br /><br />
+
+    <div class="pokemonList" id="pokemonList">
+      <div class="pokemon" id="pokemon-1">
+        <!-- IMÁGEN_LOCAL POKEMON 1-->
+        <!-- <img src="imagenes/POKEMONES/Charmander.svg" class="img" />
+        <p>Charmander</p> -->
+
+        <!-- IMÁGEN_API POKEMON 1-->
+        <img src="" alt="" class="imgPokemon" />
+        <p></p>
+      </div>
+
+      <div class="pokemon" id="pokemon-2">
+        <!-- IMÁGEN_LOCAL POKEMON 2-->
+        <!-- <img src="imagenes/POKEMONES/Pikachu.svg" class="img" />
+        <p>Pikachu</p> -->
+
+        <!-- IMÁGEN_API POKEMON 2-->
+        <img src="" alt="" class="imgPokemon" />
+        <p></p>
+      </div>
+
+      <div class="pokemon" id="pokemon-3">
+        <!-- IMÁGEN_LOCAL POKEMON 3-->
+        <!-- <img src="imagenes/POKEMONES/Bulbasaur.svg" class="img" />
+        <p>Bulbasaur</p> -->
+
+        <!-- IMÁGEN_API POKEMON 3-->
+        <img src="" alt="" class="imgPokemon" />
+        <p></p>
+      </div>
+
+      <div class="pokemon" id="pokemon-4">
+        <!-- IMÁGEN_LOCAL POKEMON 4-->
+        <!-- <img src="imagenes/POKEMONES/Beedrill.svg" class="img" />
+        <p>Beedrill</p> -->
+
+        <!-- IMÁGEN_API POKEMON 4-->
+        <img src="" alt="" class="imgPokemon" />
+        <p></p>
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+
+    <div class="botonesBlock">
+      <div>
+        <img
+          src="imagenes/06_BotonBuscarNombre.png"
+          class="imgBuscarNombre"
+          id="imgBuscarNombre"
+          onclick="searchByNameForm()"
+          data-toggle="tooltip"
+          title="Buscar por Nombre o Id"
+        />
+      </div>
+
+      <div>
+        <img
+          src="imagenes/07_BotonBuscarTipo.png"
+          class="imgBuscarTipo"
+          id="imgBuscarTipo"
+          onclick="searchByTypeForm()"
+          data-toggle="tooltip"
+          title="Buscar por Tipo"
+        />
+      </div>
+
+      <div>
+        <img
+          src="imagenes/08_BotonBatallaPokeRandom.png"
+          class="imgBatalla"
+          id="imgBatalla"
+          onclick="openBattleForm()"
+          data-toggle="tooltip"
+          title="Generar Batalla"
+        />
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

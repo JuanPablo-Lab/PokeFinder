@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="imagenes/FavIco.ico" />
     <title>PokéFinder</title>
     <link rel="stylesheet" type="text/css" href="css/searchByName.css" />
+
+    <script src="https://kit.fontawesome.com/2d6ecfbd70.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -17,22 +19,63 @@
 
     <br /><br /><br /><br /><br />
 
-    <!-- CÓDIGO HTML AQUÍ -->
+    <div class="container" id="container">
+      <form action="" method="GET" class="formulario" id="form">
+        <p class="textPoke">
+          Pokemon:
+          <input
+            type="search"
+            name=""
+            class="buscar"
+            id="buscar"
+            placeholder="Escriba el nombre o id"
+            onkeypress="if (event.keyCode == 13 || event.keyCode == 45) {consultar(); return false; }"
+          />
+        </p>
 
+        <p class="busqueda">
+          <button type="button" onclick=" consultar();">
+            <i class="fas fa-search"></i> Buscar</button>
+          <img
+            src="imagenes/02_IconoPokebolaAbierta.png"
+            alt=""
+            class="pokebola-img"
+          />
+        </p>
+      </form>
 
+      <div class="card" id="pokemon">
+        <div class="card-body">
+          <img
+            src="imagenes/POKEMONES/Pikachu.svg"
+            alt=""
+            class="card-body-img"
+            id="imgPokemon"
+          />
+          <h1 class="card-body-title">Pikachu</h1>
+          <p class="card-body-text">35 Hp</p>
+          <p class="card-body-text">112 Xp</p>
+        </div>
 
+        <div class="card-footer card-1" id="cardFooter">
+          <div class="card-footer-stat">
+            <h3>55k</h3>
+            <p>Ataque</p>
+          </div>
 
+          <div class="card-footer-stat">
+            <h3>40k</h3>
+            <p>Especial</p>
+          </div>
 
-
-
-
-
-
-
-
-
-    
-    <br /><br />
+          <div class="card-footer-stat">
+            <h3>50k</h3>
+            <p>Defensa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
 
     <footer>
       <div>

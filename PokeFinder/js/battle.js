@@ -54,7 +54,7 @@ function crearPokemon(pokemon, num) {
 
 
 function openHomeForm() {
-  window.location = "home.html";
+  window.location = "index.html";
 }
 
 
