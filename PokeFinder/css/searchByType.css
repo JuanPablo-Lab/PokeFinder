@@ -22,9 +22,124 @@ body {
 }
 
 /* ---------- ESTILOS FORM SEARCH BY TYPE ---------- */
-/* ESTILOS CSS AQUÍ */
+.container {
+  height: 20rem;
+  width: 50%;
+  min-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  text-align: center;
+}
 
+.formulario{
+  margin-left: 100px;
+  margin-top: 35px;
+  color: white;
+}
 
+.textPoke{
+  font-size: 1.5rem;
+}
+
+.formulario p,
+.formulario input{
+  vertical-align: middle;
+}
+
+.buscar {
+  width: 160px;
+  height: 30px;
+  border-radius: 50px;
+  text-align: center;
+  outline: none;
+}
+
+.busqueda{
+  margin-left: 0px;
+  margin-top: 35px;
+}
+
+.listaTipos{
+  width: 240px;
+  height: 28px;
+  border-radius: 14px;
+  border: 3px solid black;
+  text-align: center;
+  color: #8c8c8c;
+  background-color: white;
+}
+
+.listaTiposItem{
+  width: 240px;
+  height: 80px;
+  border-radius: 40px;
+  border: 3px solid black;
+  text-align: center;
+  color: #8c8c8c;
+  background-color: white;
+}
+
+button{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #9e9e9e;
+  border: 3px solid black;
+  border-radius: 50px;
+  text-align: center;
+  margin-right: 20px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #9e9e9e;
+  border-radius: 20px;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #9e9e9e;
+}
+
+.busqueda button,
+.busqueda img{
+  vertical-align: middle;
+}
+
+.pokebola-img{
+  max-width: 20%;
+}
+
+.cardsList {
+  background-color: transparent;
+  height: auto;
+  width: 42rem;
+  min-width: 32rem;
+  height: 38rem;
+  overflow: visible;
+  margin: 8px;
+}
+
+.row{
+  height: 15rem;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column{
+  width: 30%;
+  height: 15rem;
+  padding: 1.0%;
+  float: left;
+  background-color: transparent;
+}
 
 
 

@@ -9,28 +9,70 @@
     <link rel="stylesheet" type="text/css" href="css/searchByType.css" />
   </head>
 
-  <body>
+  <body onload="consultarTipos()">
     <br />
     <div class="Tittle">
       <img src="imagenes/01_TituloPokeFinder.png" class="imgTittle" />
     </div>
 
-    <!-- <br /><br /><br /><br /><br /> -->
+    <br /><br /><br /><br /><br /><br /><br /><br />
 
-    <!-- CÓDIGO HTML AQUÍ -->
-    <!-- Imágenes Provisionales -->
-    <div class="Tittle">
-      <img src="imagenes/09_BusquedaPorTipo.jpg" class="imgMockup" />
+    <div class="container" id="container">
+      <form class="formulario" id="form">
+
+        <select name="listaTipos" id="listaTipos" class="listaTipos">
+        </select>  
+
+        <p class="busqueda">
+          <button type="button" onclick=" consultar();">
+            <i class="fas fa-search"></i> Buscar</button>
+          <img
+            src="imagenes/02_IconoPokebolaAbierta.png"
+            alt=""
+            class="pokebola-img"
+          />
+        </p>
+
+      </form>      
+
+      <div class="cardsList">
+
+        <div class="row">
+          <div class="column" id="col0">
+            <img src=""/>
+            <p></p>
+          </div>
+          <div class="column" id="col1">
+            <img src=""/>
+            <p></p>
+          </div>
+          <div class="column" id="col2">
+            <img src=""/>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column" id="col3">
+            <img src=""/>
+            <p></p>
+          </div>
+          <div class="column" id="col4">
+            <img src=""/>
+            <p></p>
+          </div>
+          <div class="column" id="col5">
+            <img src=""/>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="pagesList" id="pagesList">
+        </div>
+      </div>
+  
+  
     </div>
-
-    <div class="Tittle">
-      <img src="imagenes/09_EnConstruccion.png" alt="imgEnConstruccion" />
-    </div>
-    <!--  -->
-
-
-
-
 
 
 
