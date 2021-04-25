@@ -134,20 +134,54 @@ button:hover {
 }
 
 .column{
-  width: 30%;
+  width: 28%;
   height: 15rem;
-  padding: 1.0%;
+  padding: 2.0%;
+  margin: 0.2%;
   float: left;
-  background-color: transparent;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border-color: #212121;
+}
+
+.listImage{
+  width: 90%;
+  height: 13rem;
+}
+
+.listName{
+  color: #424242;
+}
+
+.pagesList{
+  height: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  align-content: center;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+
+.pageItem{
+  text-decoration: none;
+  color: #212121;
+  padding: 6px;
 }
 
 
-
-
-
-
-
-
+.DetailModal{
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
 
 
 
@@ -163,4 +197,87 @@ button:hover {
   transform: scale(1.1);
   cursor: pointer;
   box-shadow: 0 0 30px #fd7a20;
+}
+
+/* ------------ Detail Card ---------- */
+.card-body {
+  background-color: rgb(224, 197, 160);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 3px solid #212121;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.card-body-img {
+  border: 2px solid #212121;
+  border-radius: 40px;
+  margin-top: calc(-48px - 5px);
+  background-color: #ffffff;
+  height: 150px;
+  width: 150px;
+  outline: none;
+}
+
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.card-body-title span {
+  color: #424242;
+  font-weight: 400;
+}
+
+.card-body-text-hp {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.card-body-text-xp {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  font-size: 1rem;
+  color: #212121;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.card-footer-stat {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-footer-stat p {
+  letter-spacing: 1px;
+}
+
+.card-1 {
+  background-image: linear-gradient(to right, #e0e0e0, #9e9e9e);
 }

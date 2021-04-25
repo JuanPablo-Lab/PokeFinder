@@ -45,7 +45,7 @@ function consultarPokemon(consulta) {
   });
 }
 
-function crearListaPokemon(pokemon) {
+function crearListaPokemon(pokemon) {  
   PokemonPorTipo.valores = pokemon;
   PokemonPorTipo.paginaActual = 0;
 
@@ -72,27 +72,38 @@ function crearTarjetas() {
 
   var index = 0;
   subpokemon.forEach(element => {
-    let pokemonId = getIdFromUrl(pokemon.url);
+    let pokemonId = getIdFromUrl(element.pokemon.url);
     let baseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
     let imageUrl = baseUrl + pokemonId + ".png";
     
-    let image = cols[index].getElementByTagName("img")[0];
+    let image = cols[index].getElementsByTagName("img")[0];
     image.setAttribute("src", imageUrl);
 
     let name = cols[index].getElementsByTagName("p")[0];
-    name.textContent = pokemon.name;
+    name.textContent = element.pokemon.name;
+
+    index += 1;
   });
 }
 
 function crearPaginas() {
-  let pagesList = document.getElementsById("pagesList");
+  let pagesList = document.getElementById("pagesList");
   pagesList.innerHTML = "";
 
-  let div = math.floor(PokemonPorTipo.valores.length / 6); 
-  let rem = PokemonPorTipo.valores.length % x6;
+  let div = Math.floor(PokemonPorTipo.valores.length / 6); 
+  let rem = PokemonPorTipo.valores.length % 6;
   let total = div + (rem > 0 ? 1 : 0);
 
   for (let index = 0; index < total; index++) {
+    let page = document.createElement('a');
+    page.appendChild(document.createTextNode(index + 1));
+    page.onclick = function() {
+      irAPagina(index + 1);
+    };
+
+    page.className = "pageItem";
+
+    pagesList.appendChild(page);
   }
 }
 
