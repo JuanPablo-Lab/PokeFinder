@@ -4,6 +4,8 @@ class PokemonPorTipo {
   static paginaActual = 0;
 }
 
+let lista = document.getElementById("detail");
+
 function consultarTipos() {
   fetch(`https://pokeapi.co/api/v2/type?limit=30`).then(function (response) {
     if (response.ok == true) {
@@ -30,10 +32,10 @@ function crearListaTipos(tipos) {
 function consultar() {
   let selectTipos = document.getElementById("listaTipos");
   let selectedValue = selectTipos.options[selectTipos.selectedIndex].value;
-  consultarPokemon(selectedValue);
+  consultarListaPokemon(selectedValue);
 }
 
-function consultarPokemon(consulta) {
+function consultarListaPokemon(consulta) {
   fetch(`https://pokeapi.co/api/v2/type/${consulta}`).then(function (response) {
     if (response.ok == true) {
       response.json().then(function (lista) {
@@ -76,6 +78,10 @@ function crearTarjetas() {
     let baseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
     let imageUrl = baseUrl + pokemonId + ".png";
     
+    cols[index].onclick = function() {
+      consultarDetalle(pokemonId);
+    }
+
     let image = cols[index].getElementsByTagName("img")[0];
     image.setAttribute("src", imageUrl);
 
@@ -112,6 +118,11 @@ function irAPagina(pagina) {
   crearTarjetas();
 }
 
+function consultarDetalle(pokemonId) {
+  consultarpokemon(pokemonId);
+  let modal = document.getElementById("detail");
+  modal.style.display = "block";
+}
 // ---------- BOTÓN HOME ---------- //
 function openHomeForm() {
   window.location = "index.html";
@@ -127,4 +138,11 @@ function getIdFromUrl(url) {
     var id = comps[comps.length - 2];
 
     return id;
+}
+
+window.onclick = function(event) {
+  let modal = document.getElementById("detail");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }

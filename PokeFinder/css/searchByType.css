@@ -183,6 +183,11 @@ button:hover {
   background-color: rgba(0,0,0,0.4); 
 }
 
+.cardContainer{
+  margin: 15% 5% 15% 35%; 
+  padding: 80px;
+  width: 25%;
+}
 
 
 
