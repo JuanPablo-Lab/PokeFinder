@@ -24,8 +24,10 @@ function crearPokemon(pokemon, num) {
   let item = lista.querySelector(`#pokemon-${num}`);
   let imagen = item.getElementsByTagName("img")[0];
 
+  let pokeImageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + pokemon.id + ".png";
   if (pokemon.sprites.other.dream_world.front_default != null) {
-    imagen.setAttribute("src", pokemon.sprites.other.dream_world.front_default);
+    //imagen.setAttribute("src", pokemon.sprites.other.dream_world.front_default);
+    imagen.setAttribute("src", pokeImageUrl);
   } else {
     imagen.setAttribute("src", pokemon.sprites.front_default);
   }
